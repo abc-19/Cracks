@@ -1,0 +1,19 @@
+
+        |
+      .'|'.
+	 /.'|\ \		abc19
+	 | /|'.|		Dec 30 2024
+	  \ |\/			First reversing problem
+	   \|/
+	    `
+	Since inspecting the code was allowed the first thing i made was to undo the
+	ofuscated code using vim you can do it easly by typing
+		:%s/;/;\r/g
+
+	Then fix the identation issues with the conditionals.
+	After all that i just follwed the instructions was if i were the
+	interpreter to end up with the conclussion that the password was
+	always defined within the 'a' variable, you just need to skip all
+	'9' characters and turn the numbers left into its ascii version.
+
+	''.join([chr(int(a)) for a in "71948911191009749489669459759519121933".split('9')])
